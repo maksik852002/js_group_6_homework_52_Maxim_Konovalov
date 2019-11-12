@@ -14,11 +14,11 @@ class App extends Component{
     while (numbers.length < 5) {
       let random = Math.floor(Math.random() *(36-5+1))+5;
       if (!numbers.includes(random)) {
-        numbers.push(random)
+        numbers.push(random);
       }
     }
-    numbers.sort((a,b) => a-b)
-    this.setState({numbers})
+    numbers.sort((a,b) => a-b);
+    this.setState({numbers});
   } 
 
   render = () => { 
@@ -31,8 +31,6 @@ class App extends Component{
       </div>
     )
   }
-
-
-}
+};
 
 export default App;
